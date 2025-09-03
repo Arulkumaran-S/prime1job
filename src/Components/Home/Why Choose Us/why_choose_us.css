@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap');
+
+/* ========================
+ ✅ Base Desktop Styles
+========================== */
+
+.why-section .head {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 57.2px;
+  letter-spacing: -1.5px;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+.why-section .text-primary {
+  color: #0056b3 !important;
+}
+
+.why-section p.text-muted {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #6c757d;
+}
+
+.why-section .fw-medium {
+  font-weight: 500;
+}
+
+.why-section .btn-outline-primary {
+  border-color: #0056b3;
+  color: #0056b3;
+  font-weight: 500;
+  border-radius: 30px;
+  padding: 0.6rem 1.4rem;
+  transition: all 0.3s ease;
+}
+
+.why-section .btn-outline-primary:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+/* ========================
+ ✅ Image Styling
+========================== */
+.why-section img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 20px; /* Full curve for desktop/laptop */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* optional subtle shadow */
+}
+
+/* ===============================
+ ✅ Tablet (768px – 991px)
+=============================== */
+@media (max-width: 991px) {
+  .why-section {
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  .why-section .head {
+    font-size: 38px;
+    line-height: 46px;
+    letter-spacing: -1px;
+  }
+
+  .why-section p.text-muted {
+    font-size: 13px;
+  }
+
+  .why-section .btn-outline-primary {
+    padding: 0.5rem 1.2rem;
+    font-size: 14px;
+  }
+
+  .why-section img {
+    max-height: 400px;
+    border-radius: 18px;
+  }
+
+  .why-section .row .col-6 {
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+}
+
+
+/* ===============================
+ ✅ Mobile (≤ 576px)
+=============================== */
+@media (max-width: 576px) {
+  .why-section {
+    padding: 2rem 1rem;
+  }
+
+  .why-section .head {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.5px;
+  }
+
+  .why-section p.text-muted {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .why-section .btn-outline-primary {
+    padding: 0.4rem 1rem;
+    font-size: 13px;
+  }
+
+  .why-section img {
+    max-height: 300px;
+    border-radius: 16px;
+  }
+
+  .why-section .row .col-6 {
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+}

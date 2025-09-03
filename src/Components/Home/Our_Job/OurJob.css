@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap');
+
+/* =======================
+   ✅ Base Styles (Desktop)
+========================= */
+
+.our-job-section {
+  background-color: #fff;
+  padding: 5rem 2rem;
+}
+
+.text-primary {
+  color: #0a66c2 !important;
+}
+
+.our-job-section .head {
+  font-family: 'Figtree', sans-serif;
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 57.2px;
+  letter-spacing: -1.5px;
+  margin-bottom: 1.5rem;
+  color: #212529;
+}
+
+/* =======================
+   ✅ Buttons
+========================= */
+
+.job-btn,
+.job-btn-filled {
+  font-family: 'Figtree', sans-serif;
+  font-size: 14px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.6rem 1.5rem;
+  white-space: nowrap;
+}
+
+.job-btn {
+  border: 2px solid #0a66c2;
+  background-color: transparent;
+  color: #0a66c2;
+}
+
+.job-btn:hover {
+  background-color: #0a66c2;
+  color: white;
+}
+
+.job-btn-filled {
+  background-color: #0a66c2;
+  color: white;
+  border: none;
+  font-weight: 600;
+}
+
+/* =======================
+   ✅ Image Styling
+========================= */
+
+.our-job-section img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* =======================
+   ✅ Responsive: Tablet
+   (577px – 991px)
+========================= */
+
+@media (max-width: 991px) {
+  .our-job-section {
+    padding: 3rem 1.5rem !important;
+    text-align: center;
+  }
+
+  .our-job-section .head {
+    font-size: 40px !important;
+    line-height: 48px !important;
+    margin-bottom: 1.2rem !important;
+    letter-spacing: -1px !important;
+  }
+
+  .job-btn,
+  .job-btn-filled {
+    font-size: 13px !important;
+    padding: 0.5rem 1.2rem !important;
+  }
+
+  .our-job-section img {
+    max-height: 400px !important;
+  }
+
+  .d-flex.flex-wrap.gap-3.mb-3 {
+    justify-content: center !important;
+  }
+}
+
+/* =======================
+   ✅ Responsive: Mobile
+   (0px – 576px)
+========================= */
+
+@media (max-width: 576px) {
+  .our-job-section {
+    padding: 2rem 1rem !important;
+  }
+
+  .our-job-section .head {
+    font-size: 28px !important;
+    line-height: 36px !important;
+    letter-spacing: -0.5px !important;
+    margin-bottom: 1rem !important;
+    color: #212529 !important;
+  }
+
+  .job-btn,
+  .job-btn-filled {
+    font-size: 12px !important;
+    padding: 0.4rem 1rem !important;
+  }
+
+  .our-job-section img {
+    max-height: 300px !important;
+  }
+
+  .d-flex.flex-wrap.gap-3.mb-3 {
+    gap: 0.5rem !important;
+    justify-content: center !important;
+  }
+}

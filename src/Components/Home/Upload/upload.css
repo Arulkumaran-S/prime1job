@@ -1,0 +1,136 @@
+/* upload.css */
+.upload-section {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+/* Section background */
+.upload-section {
+  background-color: #ffffff;
+  padding: 40px 20px;
+}
+
+/* Row layout using flexbox for better control */
+.upload-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Column layout */
+.step-col {
+  flex: 1 1 220px;
+  max-width: 280px;
+  padding: 0 10px;
+  text-align: center;
+  border-right: 1px solid #dbeafe;
+}
+
+/* Remove border on last element */
+.step-col:last-child {
+  border-right: none;
+}
+
+/* Icon container */
+.icon-box {
+  background-color: #e8f2fc;
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.icon-inner {
+  font-size: 36px;
+  color: #0057d8;
+}
+
+/* Step label */
+.step-label {
+  font-family: 'Figtree', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #a4a4a4;
+  margin-bottom: 4px;
+}
+
+/* Step title */
+.step-title {
+  font-family: 'Figtree', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+/* Step description */
+.step-desc {
+  font-family: 'Figtree', sans-serif;
+  font-size: 15px;
+  color: #636571;
+  line-height: 1.6;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+
+/* ---------------------------
+   Responsive Breakpoints
+---------------------------- */
+
+/* Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  .step-col {
+    border-right: none;
+    max-width: 45%;
+    flex: 1 1 45%;
+  }
+
+  .icon-box {
+    width: 80px;
+    height: 80px;
+  }
+
+  .icon-inner {
+    font-size: 30px;
+  }
+
+  .step-title {
+    font-size: 16px;
+  }
+
+  .step-desc {
+    font-size: 14px;
+  }
+}
+
+/* Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+  .step-col {
+    max-width: 100%;
+    flex: 1 1 100%;
+    border-right: none;
+    margin-bottom: 10px;
+  }
+
+  .icon-box {
+    width: 70px;
+    height: 70px;
+  }
+
+  .icon-inner {
+    font-size: 28px;
+  }
+
+  .step-title {
+    font-size: 15px;
+  }
+
+  .step-desc {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,208 @@
+/* === Section Container === */
+.container{
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+.oclient-section {
+  background-color: #ffffff;
+  padding: 2rem 1rem;
+  overflow-x: hidden;
+}
+
+/* === Section Title and Label === */
+.oclient-label {
+  color: #0a66c2;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.oclient-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #212529;
+  padding-bottom: 1%;
+}
+
+/* === Card Styles === */
+.oclient-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: 0.3s ease;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* === Quote Icon === */
+.oclient-quote-icon {
+  position: absolute;
+  top: -20px;
+  left: 24px;
+  font-size: 36px;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+/* === Stars === */
+.oclient-stars {
+  color: #0a66c2;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+/* === Testimonial Text === */
+.oclient-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  min-height: 100px;
+  margin-bottom: 20px;
+}
+
+/* === Client Info Layout === */
+.oclient-client-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+}
+
+/* === Client Image === */
+.oclient-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* === Name and Role === */
+.oclient-name {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: #212529;
+}
+
+.oclient-role {
+  font-size: 13px;
+  color: #666;
+}
+
+/* === Responsive Styles === */
+@media (max-width: 768px) {
+  .oclient-title {
+    font-size: 24px;
+  }
+
+  .oclient-label {
+    font-size: 12px;
+  }
+
+  .oclient-text {
+    font-size: 14px;
+    min-height: auto;
+  }
+
+  .oclient-card {
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .oclient-quote-icon {
+    font-size: 28px;
+    top: -16px;
+    left: 16px;
+    padding: 8px;
+  }
+
+  .oclient-stars {
+    font-size: 14px;
+  }
+
+  .oclient-img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .oclient-name {
+    font-size: 14px;
+  }
+
+  .oclient-role {
+    font-size: 12px;
+  }
+
+  .oclient-section .row {
+    justify-content: center;
+  }
+
+  /* Stack image and name vertically */
+  .oclient-client-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .oclient-title {
+    font-size: 48px;
+  }
+
+  .oclient-label {
+    font-size: 18px;
+  }
+
+  .oclient-text {
+    font-size: 18px;
+    min-height: 150px;
+  }
+
+  .oclient-card {
+    padding: 40px;
+  }
+
+  .oclient-quote-icon {
+    font-size: 48px;
+    padding: 14px;
+  }
+
+  .oclient-stars {
+    font-size: 20px;
+  }
+
+  .oclient-img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .oclient-name {
+    font-size: 20px;
+  }
+
+  .oclient-role {
+    font-size: 16px;
+  }
+}
+/* === Client Image === */
+.oclient-img {
+  width: clamp(40px, 8vw, 60px);
+  height: clamp(40px, 8vw, 60px);
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}

@@ -1,0 +1,137 @@
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.text-content {
+  max-width: 700px;
+  margin-left: 8%;
+  padding: 30px;
+  color: white;
+  position: relative;
+  z-index: 3;
+  animation: slideInLeft 1s ease-out;
+}
+
+.text-content .subtitle {
+  font-family: monospace;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.text-content h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text-content .description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.cta-button {
+  margin-top: 25px;
+  padding: 16px 36px; /* 👈 Button size adjusted */
+  background-color: #4caf50;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #45a049;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slick dots styling */
+.slick-dots {
+  bottom: 20px !important;
+  display: flex !important;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  z-index: 10;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: white;
+  opacity: 0.7;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #4caf50;
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .text-content {
+    margin-left: 5%;
+    padding: 20px;
+  }
+
+  .text-content h2 {
+    font-size: 2rem;
+  }
+
+  .text-content .description {
+    font-size: 1rem;
+  }
+
+  .slide {
+    height: 70vh;
+  }
+
+  .cta-button {
+    padding: 14px 28px;
+    font-size: 1rem;
+  }
+}

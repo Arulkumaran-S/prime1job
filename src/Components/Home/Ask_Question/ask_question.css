@@ -1,0 +1,156 @@
+/* ask_question.css */
+
+/* Section background */
+.ask-section {
+  background-color: #ffffff;
+  padding: 40px 20px;
+}
+
+/* Heading */
+.faq-heading {
+  font-size: 2.25rem; /* 36px */
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Subheading */
+.faq-subtitle {
+  font-size: 1rem; /* 16px */
+  color: #6c757d;
+}
+
+/* FAQ container */
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* FAQ Card */
+.faq-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #ececec;
+}
+
+.faq-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Question row */
+.faq-question {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Toggle icon */
+.icon {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #0a66c2;
+}
+
+/* Answer text */
+.faq-answer {
+  margin-top: 12px;
+  font-size: 0.9375rem; /* 15px */
+  color: #555;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ------------------------------
+   ✅ Responsive Styles
+------------------------------ */
+
+/* Tablets (≤ 768px) */
+@media screen and (max-width: 768px) {
+  .faq-heading {
+    font-size: 1.75rem; /* ~28px */
+  }
+
+  .faq-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .faq-question {
+    font-size: 0.95rem;
+  }
+
+  .faq-answer {
+    font-size: 0.9rem;
+  }
+
+  img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 10px;
+  }
+}
+
+/* Mobiles (≤ 480px) */
+@media screen and (max-width: 480px) {
+  .faq-heading {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  .faq-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .faq-question {
+    font-size: 0.9rem;
+  }
+
+  .faq-answer {
+    font-size: 0.875rem;
+  }
+
+  .faq-card {
+    padding: 14px 16px;
+  }
+
+  img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 300px;
+  }
+}
+
+/* Large screens (≥ 1920px / 4K) */
+@media screen and (min-width: 1920px) {
+  .faq-heading {
+    font-size: 2.5rem; /* 40px */
+  }
+
+  .faq-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .faq-question {
+    font-size: 1.125rem;
+  }
+
+  .faq-answer {
+    font-size: 1rem;
+  }
+
+  img {
+    max-width: 600px;
+    max-height: 600px;
+  }
+}
