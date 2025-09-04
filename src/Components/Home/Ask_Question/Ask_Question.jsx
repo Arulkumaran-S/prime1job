@@ -67,7 +67,6 @@ const Ask_Question = () => {
             alt="FAQ Visual"
             className="img-fluid1 rounded"
             style={{
-              // width: '530px',
               borderRadius: '10px',
               objectFit: 'cover',
             }}
