@@ -65,10 +65,9 @@ const Ask_Question = () => {
           <img
             src={faqData.imageUrl}
             alt="FAQ Visual"
-            className="img-fluid rounded"
+            className="img-fluid1 rounded"
             style={{
-              width: '530px',
-              height: '558px',
+              // width: '530px',
               borderRadius: '10px',
               objectFit: 'cover',
             }}

@@ -1,8 +1,9 @@
 /* === Section Container === */
-.container{
+.container {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
 }
+
 .oclient-section {
   background-color: #ffffff;
   padding: 2rem 1rem;
@@ -79,13 +80,14 @@
   border-top: 1px solid #eee;
 }
 
-/* === Client Image === */
+/* === Client Image (PERFECT CIRCLE FIX) === */
 .oclient-img {
   width: 60px;
   height: 60px;
-  object-fit: cover;
   border-radius: 50%;
+  object-fit: cover;
   flex-shrink: 0;
+  aspect-ratio: 1 / 1; /* Forces square shape */
 }
 
 /* === Name and Role === */
@@ -132,11 +134,6 @@
     font-size: 14px;
   }
 
-  .oclient-img {
-    width: 48px;
-    height: 48px;
-  }
-
   .oclient-name {
     font-size: 14px;
   }
@@ -149,12 +146,18 @@
     justify-content: center;
   }
 
-  /* Stack image and name vertically */
+  /* Stack image and name vertically on small screens */
   .oclient-client-info {
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 10px;
+  }
+
+  /* Smaller image for mobile */
+  .oclient-img {
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -185,11 +188,6 @@
     font-size: 20px;
   }
 
-  .oclient-img {
-    width: 64px;
-    height: 64px;
-  }
-
   .oclient-name {
     font-size: 20px;
   }
@@ -197,12 +195,9 @@
   .oclient-role {
     font-size: 16px;
   }
-}
-/* === Client Image === */
-.oclient-img {
-  width: clamp(40px, 8vw, 60px);
-  height: clamp(40px, 8vw, 60px);
-  object-fit: cover;
-  border-radius: 50%;
-  flex-shrink: 0;
+
+  .oclient-img {
+    width: 80px;
+    height: 80px;
+  }
 }

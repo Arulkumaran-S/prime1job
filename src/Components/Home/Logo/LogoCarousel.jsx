@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './LogoScroller.css';
 
-// Your logos
+// Import your logos
 import logo1 from '../../logo_Icon/bmec.png';
 import logo2 from '../../logo_Icon/CEVA_Logistics.png';
 import logo3 from '../../logo_Icon/elocars.png';
@@ -12,7 +12,7 @@ import logo7 from '../../logo_Icon/tesla.png';
 import logo8 from '../../logo_Icon/Септегга-A-Constellis-Company-1.png';
 import logo9 from '../../logo_Icon/Singapore_Post_Logo.png';
 
-const logos = [logo1, logo2, logo3, logo4, logo5, logo6,logo7 ,logo8,logo9];
+const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9];
 
 const LogoCarousel = () => {
   const [centerIndex, setCenterIndex] = useState(0);
@@ -21,7 +21,6 @@ const LogoCarousel = () => {
     const interval = setInterval(() => {
       setCenterIndex((prev) => (prev + 1) % logos.length);
     }, 2000);
-
     return () => clearInterval(interval);
   }, []);
 
@@ -40,7 +39,7 @@ const LogoCarousel = () => {
             offset === 0 ? 'center-logo' : '',
             Math.abs(offset) === 1 ? 'side-logo' : '',
             Math.abs(offset) === 2 ? 'faded-logo' : '',
-          ].join(' ');
+          ].join(' ').trim();
 
           return (
             <img
