@@ -22,7 +22,7 @@ footer {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
-  font-size: clamp(12px, 1vw, 16px);
+  font-size: clamp(14px, 1vw, 16px);
 }
 
 .footer-nav a:hover {
@@ -54,7 +54,7 @@ footer hr {
 
 .text-muted {
   color: #C1C7CD;
-  font-size: clamp(12px, 1vw, 14px);
+  font-size: clamp(15px, 2vw, 16px);
 }
 
 /* Layout utilities */
@@ -84,6 +84,7 @@ footer hr {
 }
 
 .gap-4 {
+  padding-top: 10px;
   gap: 1.5rem;
 }
 

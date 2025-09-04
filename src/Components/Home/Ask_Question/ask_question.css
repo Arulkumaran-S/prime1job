@@ -1,5 +1,8 @@
 /* ask_question.css */
 
+.img-fluid{
+  height: auto;
+}
 /* Section background */
 .ask-section {
   background-color: #ffffff;
@@ -94,12 +97,11 @@
   .faq-answer {
     font-size: 0.9rem;
   }
-
-  img {
-    width: 100% !important;
-    height: auto !important;
-    border-radius: 10px;
+  .img-fluid1{
+    width: auto;
+    height: 300px;
   }
+
 }
 
 /* Mobiles (≤ 480px) */
@@ -124,11 +126,6 @@
     padding: 14px 16px;
   }
 
-  img {
-    width: 100% !important;
-    height: auto !important;
-    max-height: 300px;
-  }
 }
 
 /* Large screens (≥ 1920px / 4K) */
@@ -149,8 +146,4 @@
     font-size: 1rem;
   }
 
-  img {
-    max-width: 600px;
-    max-height: 600px;
-  }
 }
